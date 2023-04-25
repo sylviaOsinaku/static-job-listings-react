@@ -1,0 +1,125 @@
+.job_listing-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(91, 164, 164, 0.35) 0px 5px 15px;
+  padding: 1em;
+  border-radius: 7px;
+  margin-bottom: 1.5em;
+}
+
+.details-content-wrapper {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.job_listing-wrapper img {
+  object-fit: contain;
+}
+
+.job_listing-wrapper h2 {
+  font-size: .8rem;
+}
+
+.roles-container {
+  display: flex;
+  gap: 1em;
+}
+
+.job_listing-wrapper h1 {
+  font-size: 1rem;
+}
+
+.company-details {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  margin-bottom: .5em;
+}
+
+.company-details span {
+  font-size: .85rem;
+  font-weight: 700;
+}
+
+button {
+  border: none;
+  padding: .6em;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.active {
+  background-color: hsl(180, 29%, 50%);
+  color: #fff;
+}
+
+.default-btn {
+  background-color: hsl(180, 31%, 95%);
+  color: hsl(180, 29%, 50%);
+  transform: all .15s;
+}
+
+.default-btn:hover {
+  background-color: hsl(180, 29%, 50%);
+  color: #fff;
+}
+
+.stats-wrapper {
+  color: hsl(180, 8%, 52%);
+  font-size: .8rem;
+  display: flex;
+  gap: 1em;
+  margin-top: .5em;
+}
+
+.company-details h2 {
+  color: hsl(180, 29%, 50%);
+}
+
+.company-details span {
+  color: #fff;
+  padding: .5em;
+  border-radius: 7px;
+}
+
+.details-content-wrapper h1 {
+  font-size: .9rem;
+  color: hsl(180, 29%, 50%);
+}
+
+.new {
+  background-color: hsl(180, 14%, 20%);
+}
+
+.featured {
+  background-color: hsl(180, 29%, 50%);
+}
+
+@media(max-width:888px) {
+  .job_listing-wrapper {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+
+  }
+
+  .details-content-wrapper {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .details-content-wrapper img {
+    transform: translateY(-40%);
+  }
+
+  .stats-wrapper {
+    margin-bottom: 1em;
+  }
+
+  .roles-container {
+    flex-wrap: wrap;
+  }
+}

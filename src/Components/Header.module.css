@@ -1,0 +1,79 @@
+.header-wrapper {
+  background-image: url(../images/bg-header-desktop.svg);
+  background-color: hsl(180, 29%, 50%);
+  /* height: 120px; */
+  background-repeat: no-repeat;
+  margin-bottom: 5em;
+
+}
+
+.btn-inner-container {
+  display: flex;
+  gap: 1em;
+}
+
+.btn-wrapper {
+  background-color: hsl(180, 31%, 95%);
+  color: hsl(180, 29%, 50%);
+  font-size: .8rem;
+  padding: .3em;
+  border-radius: 5px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: auto;
+  background-color: #fff;
+  padding: 1em;
+  transform: translateY(+50%);
+  box-shadow: rgba(91, 164, 164, 0.35) 0px 5px 15px;
+  align-items: center;
+
+}
+
+.btn-wrapper button {
+  background-color: hsl(180, 29%, 50%);
+  border: none;
+  margin-left: .5em;
+  cursor: pointer;
+  transition: all .15s;
+}
+
+.clear {
+  text-decoration: underline;
+  color: hsl(180, 29%, 50%);
+  background-color: transparent;
+}
+
+.btn-wrapper button:hover {
+  background-color: hsl(180, 14%, 20%);
+}
+
+@media(max-width:888px) {
+  .btn-inner-container {
+    flex-wrap: wrap;
+  }
+
+  .header-wrapper {
+    padding: 2.5em 0em;
+
+  }
+
+  .btn-container {
+    transform: translateY(+40%);
+    flex-wrap: wrap;
+
+
+  }
+}
+
+@media(max-width:717px) {
+  .header-wrapper {
+    background-image: url(../images/bg-header-mobile.svg);
+
+  }
+
+
+}
